@@ -22,12 +22,11 @@ export default function App() {
             </div>
 
             {/* CTA Button */}
-            <Button
-              className="bg-[#50BF56] hover:bg-[#3AA940] text-[#FFFFFF]"
-              size="lg"
+            <button
+              className="bg-[#50BF56] hover:bg-[#3AA940] text-[#FFFFFF] px-4 py-2 rounded-[0.4rem]"
             >
               Download App
-            </Button>
+            </button>
           </div>
         </div>
       </nav>
