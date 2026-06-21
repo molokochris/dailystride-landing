@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — DailyStride</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(to bottom,
+                    #ffffff,
+                    rgba(255, 247, 237, 0.3),
+                    rgba(255, 237, 213, 0.4));
+
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            color: #444;
+
+            display: flex;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 18px 48px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+            background: transparent;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            text-decoration: none;
+            color: #50BF56;
+
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .logo img {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+        }
+
+        .back-btn {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.2s ease;
+        }
+
+        .back-btn:hover {
+            color: #50BF56;
+        }
+
+        main {
+            max-width: 760px;
+            margin: 0 auto;
+            scroll-behavior: smooth;
+            padding: 64px 24px 100px;
+        }
+
+        .page-title {
+            font-size: 38px;
+            font-weight: 800;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #111;
+
+            margin: 40px 0 12px;
+            padding-bottom: 8px;
+
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+
+            margin: 24px 0 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 14px;
+            line-height: 1.6;
+            max-width: 70ch;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 14px;
+        }
+
+        ul li {
+            color: #666;
+            padding: 6px 0 6px 22px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #50BF56;
+        }
+
+        code {
+            background: rgba(0, 0, 0, 0.05);
+            color: #50BF56;
+
+            padding: 3px 6px;
+            border-radius: 6px;
+
+            font-size: 13px;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        a {
+            color: #50BF56;
+            text-decoration: none;
+            transition: 0.2s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        strong {
+            color: #e8e8e8;
+            font-weight: 600;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 14px;
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        th {
+            text-align: left;
+            padding: 10px 14px;
+            background: #141414;
+            color: #888;
+            font-weight: 600;
+            border-bottom: 1px solid #222;
+        }
+
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #1a1a1a;
+            color: #aaa;
+            vertical-align: top;
+        }
+
+        td a {
+            color: #50BF56;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+
+            border-radius: 12px;
+            padding: 24px;
+
+            margin-top: 16px;
+
+            backdrop-filter: blur(8px);
+        }
+
+        .contact-box p {
+            margin-bottom: 6px;
+            color: #666;
+        }
+
+        .contact-box a {
+            color: #50BF56;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+            color: #999;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #50BF56;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+
+            header {
+                padding: 14px 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .logo {
+                font-size: 16px;
+            }
+
+            main {
+                padding: 40px 18px 80px;
+            }
+
+            .page-title {
+                font-size: 30px;
+                line-height: 1.2;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            ul li {
+                font-size: 15px;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .page-title {
+                font-size: 26px;
+            }
+
+            main {
+                padding: 32px 16px 70px;
+            }
+
+            .back-btn {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="/" class="logo">
+            <img src="./logo_symbol.svg" alt="dailystride logo symbol" style="width: 2rem; height: 2rem;" />
+            <img src="./logo_text.svg" alt="dailystride text" style="width: 6.75rem; " />
+        </a>
+        <a href="/" class="back-btn">← Back to home</a>
+    </header>
+
+    <main>
+        <h1 class="page-title">Privacy Policy</h1>
+        <p class="last-updated">Last updated: June 2026</p>
+
+        <h2>1. Who We Are</h2>
+        <p>DailyStride is built by Moloko Chris Poopedi, operating under M4dKreatives, based in South Africa.</p>
+
+        <h2>2. What We Collect</h2>
+
+        <h3>2.1 Data you create locally (stored on your device)</h3>
+        <p>We store the following information locally on your device using AsyncStorage:</p>
+        <ul>
+            <li>Habits, habit completions, and archived habits</li>
+            <li>Profile information you set in the app (display name, bio)</li>
+            <li>App preferences (theme, notification settings, backup schedule, sound)</li>
+            <li>Progress data (streaks, completions)</li>
+        </ul>
+        <p>This local data does not leave your device unless you explicitly use the optional Google Drive backup
+            feature.</p>
+
+        <h3>2.2 Google Drive backup (optional)</h3>
+        <p>If you choose to connect Google Drive for backup, DailyStride uses the <code>drive.appdata</code> scope to
+            save your habit data as a JSON file in your Google Drive <strong>hidden app folder</strong> — a private
+            storage area that is not visible in your regular Google Drive view and is inaccessible to other apps or
+            people.</p>
+        <ul>
+            <li>We access only files created by DailyStride in this hidden folder.</li>
+            <li>We do not read, modify, or access any other files in your Google Drive.</li>
+            <li>Your Google account email address is stored locally on your device to display your connection status. It
+                is not transmitted to our servers.</li>
+            <li>We retain a maximum of 5 backup files, removing the oldest when a new one is created.</li>
+        </ul>
+        <p>We use Google Sign-In solely to access Google Drive for backup. We do not use it for account authentication,
+            and we do not access your Google profile beyond what is required to authorize Drive access.</p>
+
+        <h3>2.3 Premium / coupon redemptions</h3>
+        <p>If you redeem a coupon code:</p>
+        <ul>
+            <li>We store an anonymous device identifier and a redemption record in our Supabase database to prevent
+                duplicate redemptions and to manage access grants.</li>
+            <li>The device identifier is derived from your Android device ID or iOS vendor identifier, or a generated
+                UUID stored locally if neither is available. It is not linked to your name, email, or any personal
+                account.</li>
+            <li>For organization-domain coupons that require email verification, we collect and store your email address
+                in Supabase solely to verify eligibility and prevent misuse. This email is not used for marketing.</li>
+        </ul>
+
+        <h3>2.4 Waitlist</h3>
+        <p>If you join the waitlist for DailyStride Premium, we collect your email address and store it in our Supabase
+            database. We use it only to notify you when access becomes available. You can request deletion of your
+            waitlist entry at any time by contacting us.</p>
+
+        <h3>2.5 Notifications</h3>
+        <p>DailyStride schedules local notifications on your device for habit reminders and streak alerts. These are
+            processed entirely on-device and do not require a server.</p>
+
+        <h2>3. What We Do Not Collect</h2>
+        <ul>
+            <li>We do not collect your name, phone number, or billing address.</li>
+            <li>We do not serve advertisements.</li>
+            <li>We do not sell, rent, or share your data with third parties.</li>
+            <li>We do not collect analytics, behavioral tracking, or crash reports in the current version. This may
+                change in a future update, and this policy will be updated accordingly.</li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Purpose</th>
+                    <th>Privacy Policy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Google Drive API</td>
+                    <td>Optional cloud backup (drive.appdata scope)</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Supabase</td>
+                    <td>Coupon redemptions, waitlist, OTP verifications</td>
+                    <td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Expo / EAS</td>
+                    <td>App delivery and notification infrastructure</td>
+                    <td><a href="https://expo.dev/privacy" target="_blank">expo.dev/privacy</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>5. Data Retention</h2>
+        <ul>
+            <li><strong>Local device data</strong> remains until you uninstall the app or clear app data.</li>
+            <li><strong>Google Drive backups</strong> remain in your Google Drive until you delete them.</li>
+            <li><strong>Coupon redemption records</strong> are retained for the duration of your entitlement and a
+                reasonable period afterward for fraud prevention.</li>
+            <li><strong>Waitlist emails</strong> are retained until you request deletion or we notify you and close the
+                waitlist.</li>
+            <li><strong>OTP verification emails</strong> are deleted from our database after verification is complete or
+                the code expires (15 minutes).</li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+        <p>DailyStride is not directed at children under 13. We do not knowingly collect personal information from
+            children under 13. If you believe a child has provided personal information, contact us and we will delete
+            it promptly.</p>
+
+        <h2>7. Your Rights and Choices</h2>
+        <p>You can:</p>
+        <ul>
+            <li>Delete local data by uninstalling the app or clearing app storage in your device settings.</li>
+            <li>Delete Google Drive backup files directly from Google Drive at any time.</li>
+            <li>Disconnect Google Drive backup from within the app at any time.</li>
+            <li>Request deletion of your coupon redemption record, waitlist entry, or any stored email by contacting us.
+            </li>
+        </ul>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>We will update the "Last updated" date when this policy changes. For significant changes we may provide an
+            in-app notice.</p>
+
+        <h2>9. Contact</h2>
+        <div class="contact-box">
+            <p><strong>Email:</strong> <a href="mailto:molokochrisp742@gmail.com">molokochrisp742@gmail.com</a></p>
+            <p><strong>Developer:</strong> Moloko Chris Poopedi</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 DailyStride · <a href="/">Home</a></p>
+    </footer>
+
+</body>
+
+</html>

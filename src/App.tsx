@@ -1,34 +1,24 @@
 import { Button } from "./components/ui/button";
-import { ImageWithFallback } from "./components/figma/ImageWithFallback";
-import { Activity, Apple, Download } from "lucide-react";
-import logoSymbol from "../public/logo_symbol.svg";
-import logoText from "../public/logo_text.svg";
-import appleIcon from "../public/app-store.svg";
-import googlePlayIcon from "../public/google-play.svg";
+import logoSymbol from "/logo_symbol.svg";
+import logoText from "/logo_text.svg";
+import appleIcon from "/app-store.svg";
+import googlePlayIcon from "/google-play.svg";
 import phoneMock0 from "./assets/images/phone-mock-0.png";
-import phoneMock1 from "./assets/images/phone-mock-1.png";
 import phoneMock2 from "./assets/images/phone-mock-2.png";
 import phoneMock3 from "./assets/images/phone-mock-3.png";
 
 export default function App() {
-  // Mock user avatars for trust indicator
-  const userAvatars = [
-    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
-    "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
-    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
-  ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-orange-50/30 to-orange-100/40">
+    <div className="min-h-screen bg-gradient-to-b from-white via-orange-50/30 to-orange-100/40 flex flex-col">
       {/* Navigation */}
       <nav className="">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-2 ml-4">
-              <img src={logoSymbol} alt="logo symbol" className="w-12 h-8" />
-              <img src={logoText} alt="logo text" className="h-4" />
+              <img src={logoSymbol} alt="logo symbol" className="w-[1.5rem] h-[1.5rem]" />
+              <img src={logoText} alt="logo text" className="h-[1rem]" />
             </div>
 
             {/* CTA Button */}
@@ -43,7 +33,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <main className="max-w-7xl mx-auto px-6 py-16 md:py-24">
+      <main className="flex-1 max-w-7xl mx-auto px-6 py-12 sm:py-16 md:py-24">
         <div className="text-center">
 
           {/* Main Headline */}
@@ -55,7 +45,7 @@ export default function App() {
 
           {/* Description */}
           <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-lg">
-            Track habits, break bad ones, and stay consistent with <span className="font-semibold underline underline-offset-6 decoration-dashed">Dailystride</span> - your simple daily growth companion.
+            Track habits, break bad ones, and stay consistent with <span className="font-semibold underline underline-offset-6 decoration-dashed">DailyStride</span> - your simple daily growth companion.
           </p>
 
           {/* Download Buttons */}
@@ -69,13 +59,13 @@ export default function App() {
             >
               <img src={appleIcon} alt="apple icon" className="size-8" />
               <div className="text-left">
-                {/* <div className="text-xs">Download on the</div> */}
                 <div className="text-lg font-semibold">App Store</div>
-                <div className="text-xs">coming soon..</div></div>
+                <div className="text-xs">coming soon..</div>
+              </div>
             </a>
 
             <a
-              href="https://play.google.com"
+              href="https://play.google.com/store/apps/details?id=com.molokochris.dailystride"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-900 transition-colors"
@@ -100,7 +90,7 @@ export default function App() {
 
               {/* Center Phone (Main) */}
               <div className="relative z-10">
-                <div className="w-70">
+                <div className="w-[280px]">
                   <img src={phoneMock0} alt="mock phone 2" className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -119,6 +109,29 @@ export default function App() {
           </div>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-200 py-8 mt-16">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-gray-400">
+            © 2026 DailyStride
+          </p>
+          <div className="flex items-center gap-6 text-sm">
+            <a
+              href="/privacy.html"
+              className="text-gray-400 hover:text-[#50BF56] transition-colors"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="mailto:molokochrisp742@gmail.com"
+              className="text-gray-400 hover:text-[#50BF56] transition-colors"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
