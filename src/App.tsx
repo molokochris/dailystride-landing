@@ -1,4 +1,3 @@
-import { Button } from "./components/ui/button";
 import logoSymbol from "/logo_symbol.svg";
 import logoText from "/logo_text.svg";
 import appleIcon from "/app-store.svg";
@@ -16,10 +15,19 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="flex items-center gap-2 ml-4">
-              <img src={logoSymbol} alt="logo symbol" className="w-[1.5rem] h-[1.5rem]" />
-              <img src={logoText} alt="logo text" className="h-[1rem]" />
+            <div className="flex items-center gap-1 sm:gap-2 ml-0 sm:ml-4">
+              <img
+                src={logoSymbol}
+                alt="logo symbol"
+                className="w-5 h-5 sm:w-4 sm:h-4 object-contain"
+              />
+              <img
+                src={logoText}
+                alt="logo text"
+                className="w-auto h-3.5 sm:h-4 object-contain"
+              />
             </div>
+
 
             {/* CTA Button */}
             <button
@@ -48,7 +56,7 @@ export default function App() {
           </p>
 
           {/* Download Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
             <a
               href="https://apps.apple.com"
               target="_blank"
@@ -67,7 +75,8 @@ export default function App() {
               href="https://play.google.com/store/apps/details?id=com.molokochris.dailystride"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-900 transition-colors"
+              aria-disabled="true"
+              className="pointer-events-none cursor-not-allowed opacity-50 inline-flex items-center gap-3 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-900 transition-colors"
             >
               <img src={googlePlayIcon} alt="google play icon" className="size-8" />
               <div className="text-left">
@@ -75,6 +84,11 @@ export default function App() {
                 <div className="text-lg font-semibold">Google Play</div>
               </div>
             </a>
+          </div>
+          <div className="flex items-center justify-center gap-4 mb-16">
+            <p className="mt-3 text-sm text-gray-200">
+              Now in review on Google Play. App Store release coming soon.
+            </p>
           </div>
 
           {/* Phone Mockups */}
@@ -103,8 +117,12 @@ export default function App() {
             </div>
 
             {/* Background gradient orbs */}
-            <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl -z-10"></div>
-            <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-rose-300/20 rounded-full blur-3xl -z-10"></div>
+            {/* Purple Blob: Hidden on mobile, visible on small screens and up */}
+            <div className="hidden sm:block absolute top-1/2 left-1/4 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl -z-10"></div>
+
+            {/* Rose Blob: Hidden on mobile, visible on small screens and up */}
+            <div className="hidden sm:block absolute top-1/3 right-1/4 w-96 h-96 bg-rose-300/20 rounded-full blur-3xl -z-10"></div>
+
           </div>
         </div>
       </main>
