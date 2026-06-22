@@ -66,8 +66,8 @@ export default function App() {
             >
               <img src={appleIcon} alt="apple icon" className="size-8" />
               <div className="text-left">
+                <div className="text-xs">Get it on</div>
                 <div className="text-lg font-semibold">App Store</div>
-                <div className="text-xs">coming soon..</div>
               </div>
             </a>
 
