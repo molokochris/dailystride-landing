@@ -141,7 +141,7 @@ Custom domain: `dailystride.app` — DNS managed via Cloudflare.
 
 - **Landing page:** [dailystride.app](https://dailystride.app)
 - **Privacy policy:** [dailystride.app/privacy.html](https://dailystride.app/privacy.html)
-- **Google Play:** [Coming soon]
+- **Google Play:** [Download App](https://play.google.com/store/apps/details?id=com.molokochris.dailystride)
 - **X Account:** [DailyStride App](https://x.com/dailystride_app)
 - **Developer:** [Moloko Chris Poopedi](https://github.com/molokochris)
 
