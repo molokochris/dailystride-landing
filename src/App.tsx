@@ -75,8 +75,7 @@ export default function App() {
               href="https://play.google.com/store/apps/details?id=com.molokochris.dailystride"
               target="_blank"
               rel="noopener noreferrer"
-              aria-disabled="true"
-              className="pointer-events-none cursor-not-allowed opacity-50 inline-flex items-center gap-3 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-900 transition-colors"
+              className="inline-flex items-center gap-3 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-900 transition-colors"
             >
               <img src={googlePlayIcon} alt="google play icon" className="size-8" />
               <div className="text-left">
